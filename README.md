@@ -78,6 +78,7 @@ Authorization callback URL 填写：http://ip:8080/auth/github/callback。
 Bash
 # 1. 克隆代码
 git clone [https://github.com/jinhuaitao/PROXY-PANEL.git](https://github.com/jinhuaitao/PROXY-PANEL.git)
+
 cd PROXY-PANEL
 
 # 2. 下载依赖
@@ -85,6 +86,7 @@ go mod tidy
 
 # 3. 编译 (禁用 CGO，方便跨平台)
 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags "-s -w" -o proxypanel-linux-amd64 main.go
+
 📄 License
 本项目采用 MIT License 开源协议。
 
